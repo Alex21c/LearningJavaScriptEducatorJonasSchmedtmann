@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bankist App">
+    <meta name="keywords" content="JavaScript ES6, HTML5, CSS3, Jonas Schmedtmann, Udemy">
+    <meta name="author" content="Abhishek kuamr">        
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <title>Bankist App</title>      
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1 class="displayNone">Bankist App</h1>
+    <div id="wrapperPage">
+      <header id="header">
+        <h2>Good Day, Abhishek!</h2>
+        <a id='logo' href="/"><img src="Images/logo.png" alt="Logo" loading="lazy"></a>        
+        <form action="#">
+          <input type="text" name="userId" placeholder="userId">
+          <input type="password" name="pin" placeholder="PIN">
+          <button>→</button>
+        </form>
+      </header>
+  
+      <main>
+        <section id="currentBalance">
+          <h2 class="displayNone">Current Balance</h2>
+          <div>
+            <h2>Current Balance</h2>
+            <p>As of 26-Dec-2023, 02:36PM</p>
+          </div>
+          <div class="balanceAmount">
+            ₹ 1,75,000/-
+          </div>
+        </section>
+        <div class="wrapperDepositsAnd3SectionsRight">
+          <section id="transactions">
+            <h2 class="displayNone">Transactions</h2>
+            <ul>
+              <li>
+                <div class="transactionInfo">
+                  <span class="deposit">8 DEPOSIT</span>
+                  <span>26-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  ₹15,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="withdrawal">7 WITHDRAWAL</span>
+                  <span>25-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  -₹5,000
+                </div>
+              </li>
+
+              <!-- Duplicates begin -->
+              <li>
+                <div class="transactionInfo">
+                  <span class="deposit">8 DEPOSIT</span>
+                  <span>26-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  ₹15,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="withdrawal">7 WITHDRAWAL</span>
+                  <span>25-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  -₹5,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="deposit">8 DEPOSIT</span>
+                  <span>26-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  ₹15,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="withdrawal">7 WITHDRAWAL</span>
+                  <span>25-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  -₹5,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="deposit">8 DEPOSIT</span>
+                  <span>26-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  ₹15,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="withdrawal">7 WITHDRAWAL</span>
+                  <span>25-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  -₹5,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="deposit">8 DEPOSIT</span>
+                  <span>26-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  ₹15,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="withdrawal">7 WITHDRAWAL</span>
+                  <span>25-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  -₹5,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="deposit">8 DEPOSIT</span>
+                  <span>26-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  ₹15,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="withdrawal">7 WITHDRAWAL</span>
+                  <span>25-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  -₹5,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="deposit">8 DEPOSIT</span>
+                  <span>26-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  ₹15,000
+                </div>
+              </li>
+              <li>
+                <div class="transactionInfo">
+                  <span class="withdrawal">7 WITHDRAWAL</span>
+                  <span>25-Dec-2023</span>
+                </div>
+                <div class="transactionAmount">
+                  -₹5,000
+                </div>
+              </li>
+
+              <!-- Duplicates end -->
+  
+            </ul>
+          </section>
+          <div class="wrapper3SectionsTransferRequestClose">
+            <section id="transferMoney" class="commonTransferOrLoanOrClose">
+              <h2>Transfer money</h2>
+              <form action="#">
+                <div>
+                  <input type="text" id="transferMoneyTo">
+                  <label for="transferMoneyTo">Transfer to</label>
+                </div>
+                <div>
+                  <input type="number" id="transferAmount">
+                  <label for="transferAmount">Amount</label>
+                </div>
+                <div>
+                  <button>→</button>
+                </div>
+              </form>
+            </section>
+            <section id='requestLoan' class="commonTransferOrLoanOrClose">
+              <h2>Request Loan</h2>
+              <form action="#">
+                <div>
+                  <input type="number" name="loanAmount" id="loanAmount">
+                  <label for="loanAmount">Amount</label>
+                </div>
+                <div>
+                  <button>→</button>
+                </div>
+              </form>
+            </section>
+            <section id='closeAccount' class="commonTransferOrLoanOrClose">
+              <h2>Close account</h2>
+              <form action="#">
+                <div>
+                  <input type="text" name="confirmUser" id="confirmUser">
+                  <label for="confirmUser">Confirm user</label>
+                </div>
+                <div>
+                  <input type="number" name="confirmPIN" id="confirmPIN">
+                  <label for="confirmPIN">confirm PIN</label>
+                </div>
+                <div>
+                  <button>→</button>
+                </div>
+              </form>
+
+            </section>
+          </div>
+        </div>
+  
+        <section id="statusBar">
+          <h2 class="displayNone">In,Out,Interest</h2>
+          <ul>
+            <li>
+              <span>IN</span>
+              <span class="valueIn">₹1,50,000</span>
+            </li>
+            <li>
+              <span>OUT</span>
+              <span class="valueOut">₹80,000</span>
+            </li>
+            <li>
+              <span>INTEREST</span>
+              <span class="valueInterest">₹25000</span>
+            </li>
+            <li>
+              <button>↓ SORT</button>
+            </li>
+          </ul>
+          <div>
+            You will be logged out in <span class="loggedOutTime">09:58</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

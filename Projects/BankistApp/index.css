@@ -1,0 +1,272 @@
+:root {
+  --color-grayishwhite: #f3f3f3;
+  --color-lightGray: #444;
+  --color-lightGray2: #BBC1D3;
+  --color-lightGray3: #888888;
+  --color-yellow: #ffcb03;
+  --color-yellowDark: #ffb003; 
+  --color-green: #9be15d;
+  --color-green2: #66c873;
+  --color-greenDark: #39b385;
+  --color-pink: #ff585f;
+  --color-pinkDark: #e52a5a;
+  
+
+}
+
+*, ::before, ::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+.displayNone{
+  display:none;
+}
+html{
+  font-size:16px;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: var(--color-grayishwhite);
+  color:var(--color-lightGray);
+  
+}
+ul{
+  list-style: none;
+}
+h2{
+  color:var(--color-lightGray);
+  font-weight: 600;
+}
+
+div#wrapperPage{
+  /* background-color: orange; */
+  max-width: 80rem;
+  margin: auto;
+  /* background-color: lightcyan; */
+  padding-bottom:5rem;
+}
+main{
+  width: 90%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  padding-top: 1rem;
+}
+/***
+ * SHARED COMPONENTS 
+ */
+ form input{
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 11rem;
+  border:1px solid var(--color-grayishwhite);
+  transition: .3s;
+  opacity: .5;
+}
+form input:focus{
+  outline:none;
+  border-color:var(--color-lightGray2);
+  opacity: .8;
+}
+form input::placeholder{
+  color:var(--color-lightGray2);
+  font-weight: normal;
+}
+
+form button{
+  font-size: 2rem;
+  background:none;
+  border:none;
+}
+button{
+  transition:.3s;
+}
+button:hover{
+  cursor: pointer;
+  color:var(--color-lightGray3);
+}
+
+/***
+ * PAGE HEADER
+ */
+header#header{
+  /* margin-top: 1rem; */
+  display: flex;
+  /* background: yellow; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0rem;
+  background-color: var(--color-grayishwhite);
+  padding: 1rem 0;
+}
+
+header#header a#logo img{
+  width: 3.5rem;;
+}
+
+
+
+/***
+ * CURRENT BALANCE  
+ */
+section#currentBalance{
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: space-between;
+}
+
+section#currentBalance div.balanceAmount{
+  font-size: 3rem;
+  font-weight: 500;
+}
+section#currentBalance p {
+  color:var(--color-lightGray3);
+}
+
+
+/***
+ * wrapperDepositsAnd3SectionsRight 
+ */
+
+  main div.wrapperDepositsAnd3SectionsRight{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  div.wrapper3SectionsTransferRequestClose{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+  div.wrapper3SectionsTransferRequestClose h2{
+    margin-bottom: 1rem;
+  }
+
+  section.commonTransferOrLoanOrClose{
+    background: linear-gradient(to top left, var(--color-yellowDark), var(--color-yellow));
+    padding:2rem;
+    border-radius: .5rem;
+  }
+
+  section.commonTransferOrLoanOrClose form{    
+    display: flex;
+    gap:1rem;
+    
+  }
+  section.commonTransferOrLoanOrClose form>div{
+    display: flex;
+    flex-direction: column;  
+    gap:.5rem;
+  }
+  div.wrapper3SectionsTransferRequestClose form label{
+    text-align: center;
+  }
+  div.wrapper3SectionsTransferRequestClose form input{
+    border-radius: .5rem;
+  }
+  div.wrapper3SectionsTransferRequestClose form button{
+    background-color: white;
+    padding:.2rem 1rem;
+    border-radius: .5rem;
+  }
+
+  section#requestLoan, 
+  .deposit{
+    background: linear-gradient(to top left, var(--color-greenDark), var(--color-green));
+  }
+  section#closeAccount,
+  .withdrawal{
+    background: linear-gradient(to top left, var(--color-pinkDark), var(--color-pink));
+  }
+
+  
+/***
+ * TRANSACTIONS 
+ */
+ 
+ section#transactions{
+  width: 100%;
+ }
+ section#transactions ul{
+   display: flex;
+   flex-direction: column;
+   gap:.5rem;  
+   max-height: 40rem;
+   overflow: hidden;
+   overflow-y: scroll;
+  }
+section#transactions ul li{
+  background-color: white;
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: .5rem;
+  justify-content: space-between;
+}
+
+section#transactions ul li div.transactionInfo{
+  display: flex;
+  gap:1rem;
+}
+
+.deposit,
+.withdrawal{
+  color:white;
+  font-weight: 600;
+  padding:.2rem .7rem;
+  border-radius: 1rem;
+  max-height: 2rem;
+}
+section#transactions ul li div.transactionAmount{
+  font-size: 1.5rem;
+}
+
+
+/***
+ * STATUS BAR 
+ */
+ section#statusBar{
+  display: flex;
+  justify-content: space-between;
+ }
+section#statusBar ul{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* background-color: yellow; */
+  align-items: baseline;
+}
+
+section#statusBar ul li{
+  font-size: 1rem;
+  font-weight: 500;
+}
+section#statusBar ul button{
+  background: none;
+  border:none;
+  font-size: 1.2rem;
+}
+
+.valueIn,
+.valueOut,
+.valueInterest
+{
+  color:var(--color-green2);
+  font-size: 2rem;
+}
+
+.valueOut{
+  color:var(--color-pinkDark);
+}
+
+span.loggedOutTime{
+  font-weight: 600;
+}
