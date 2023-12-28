@@ -236,6 +236,7 @@ section#transactions ul li div.transactionAmount{
  section#statusBar{
   display: flex;
   justify-content: space-between;
+  gap:1rem;
  }
 section#statusBar ul{
   display: flex;
@@ -269,4 +270,101 @@ section#statusBar ul button{
 
 span.loggedOutTime{
   font-weight: 600;
+}
+
+
+/***
+ * MEDIA QUERIES 
+ */
+ @media screen and (max-width:1290px) {
+   header#header{
+     padding:1rem;
+    } 
+  }
+  
+@media screen and (max-width:1070px) {
+  section.commonTransferOrLoanOrClose form{
+    flex-direction: column;
+  }
+  section#transactions ul{
+    max-height: 64rem;
+  }
+  div.wrapper3SectionsTransferRequestClose h2{
+    text-align: center;
+  }
+  section#statusBar ul{
+    gap:1rem;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .valueIn, .valueOut, .valueInterest{
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width:836px) {
+  section#statusBar ul{
+    gap:0;
+  }
+}
+
+@media screen and (max-width:790px) {
+  header#header{
+    flex-direction: column;
+    gap:1rem;
+  }
+  section#statusBar ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  section#transactions ul li div.transactionInfo{
+    flex-direction: column;
+    gap:.5rem;
+
+  }
+  section#transactions ul li{
+    min-height: unset;
+  }
+
+}
+
+
+
+@media screen and (max-width:610px) {
+  main div.wrapperDepositsAnd3SectionsRight{
+    flex-direction: column;
+  }
+  section.commonTransferOrLoanOrClose form{
+    justify-content: center;
+    align-items: center;
+  }
+  section#statusBar{
+    flex-direction: column;
+  }
+
+  section#currentBalance{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:444px) {
+  header#header form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:330px) {
+  section#currentBalance div.balanceAmount{
+    font-size: 2.5rem;
+  }
 }
